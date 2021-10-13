@@ -24,8 +24,8 @@ def draw_roc(logscale):
     plt.plot(fpr3, tpr3, 'g--', label='method2 ROC (area = {0:.2f})'.format(roc_auc3), lw=2)
     roc_auc4 = auc(fpr4, tpr4)
     plt.plot(fpr4, tpr4, 'k--', label='method3 ROC (area = {0:.2f})'.format(roc_auc4), lw=2)
-    plt.xlim([-0.05, 1.05])  
-    plt.ylim([-0.05, 1.05])
+    plt.xlim([0.0001, 1.05])  
+    plt.ylim([0.0001, 1.05])
 
     if logscale == True:
         plt.xscale('log')
