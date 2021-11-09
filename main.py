@@ -20,7 +20,7 @@ label_fake = (np.ones((1999,))*2).tolist()
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
-ax.set_aspect(2.7, adjustable='box')
+ax.set_aspect(2.718, adjustable='box')
 plt.rcParams.update({'font.size':20})
 
 def draw_roc(logscale):
